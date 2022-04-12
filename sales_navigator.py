@@ -64,7 +64,6 @@ def valid_email():
         )
 
         time.sleep(20)
-
         first_response = r.content
         first_response = first_response.decode("utf-8")
         print('first_response: ', first_response)
@@ -128,7 +127,7 @@ def find_k(str):
         return False
 
 def amount_to_integer(str):
-    # парсинг количество сотрудников компании
+    # парсинг количество сотрудников
     index2 = str.index(')')
     index = str.index('(')
     str = str[index + 1:index2]
@@ -141,10 +140,8 @@ def amount_to_integer(str):
         return str1
 
 
-
-
 def amount_of_employees(count):
-    # количество сотрудников в компании
+    # количество сотрудников
     employees = amount_to_integer(count)
 
     if employees == True:
