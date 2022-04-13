@@ -492,6 +492,7 @@ def enter_to_linkedin():
     #вход нa cαйт sales navigator
     global driver
     opt = webdriver.ChromeOptions()
+    # добавить профиль пользователя в браузер
     opt.add_argument(' --profile-directory="Default"')
     # путь к папке chromeprofile
     opt.add_argument(r"--user-data-dir=C:\\Users\\Zhenia\\Desktop\\salesNav\\chrome\\chromedriver_win32\\chromeprofile")
